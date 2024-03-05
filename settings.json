@@ -1,0 +1,212 @@
+{
+  "vscode_custom_css.imports": [
+    "file:///D:Workspace/vscode-custom/css/dracula.css"
+  ],
+  "indentRainbow.colors": [
+    "rgba(24, 78, 119,0.15)",
+    "rgba(30, 96, 145,0.15)",
+    "rgba(26, 117, 159, 0.15)",
+    "rgba(22, 138, 173,0.15)",
+    "rgba(52, 160, 164,0.15)",
+    "rgba(82, 182, 154,0.15)",
+    "rgba(82, 182, 154,0.1)",
+    "rgba(82, 182, 154,0.05)",
+    "rgba(82, 182, 154,0.025)"
+  ],
+  "editor.tabSize": 2,
+  "color-highlight.matchRgbWithNoFunction": true,
+  "color-highlight.matchWords": true,
+  "editor.wordWrap": "bounded",
+  "reactSnippets.settings.prettierEnabled": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.cursorWidth": 1,
+  "terminal.integrated.cursorWidth": 2,
+  "editor.suggest.preview": true,
+  "editor.bracketPairColorization.enabled": true,
+  "terminal.integrated.lineHeight": 1.5,
+  "editor.multiCursorPaste": "full",
+  "editor.inlineSuggest.enabled": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.matchBrackets": "always"
+  },
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "prettier.singleQuote": true,
+  "window.openFilesInNewWindow": "on",
+  "editor.matchBrackets": "never",
+  "turboConsoleLog.logMessagePrefix": "",
+  "turboConsoleLog.includeFileNameAndLineNum": false,
+  "console-ninja.toolsToEnableSupportAutomaticallyFor": {
+    "live-server": true,
+    "live-server-extension": true,
+    "live-preview-extension": true
+  },
+  "terminal.integrated.env.windows": {},
+  "terminal.integrated.env.linux": {},
+  "terminal.integrated.defaultProfile.linux": "zsh",
+  "terminal.integrated.profiles.windows": {
+    "PowerShell": {
+      "source": "PowerShell",
+      "icon": "terminal-powershell"
+    },
+    "Command Prompt": {
+      "path": [
+        "${env:windir}\\Sysnative\\cmd.exe",
+        "${env:windir}\\System32\\cmd.exe"
+      ],
+      "args": [],
+      "icon": "terminal-cmd"
+    },
+    "Git Bash": {
+      "source": "Git Bash"
+    },
+    "Ubuntu (WSL)": {
+      "path": "C:\\Windows\\System32\\wsl.exe",
+      "args": ["-d", "Ubuntu"]
+    }
+  },
+  "terminal.integrated.letterSpacing": 0.5,
+  "editor.fontFamily": "Dank Mono, Arial, Helvetica, sans-serif",
+  "files.trimTrailingWhitespace": true,
+  "explorer.confirmDelete": false,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "vue-html": "html"
+  },
+  "emmet.triggerExpansionOnTab": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "gitlens.advanced.messages": {
+    "suppressGitMissingWarning": true,
+    "suppressLineUncommittedWarning": true
+  },
+  "debug.console.fontSize": 14,
+  "explorer.confirmDragAndDrop": false,
+  "files.autoSaveDelay": 5000,
+  "editor.fontLigatures": true,
+  "files.exclude": {
+    "**/.history": true,
+    "**/.next": true,
+    "**/.nuxt": true
+  },
+  "liveServer.settings.donotShowInfoMsg": true,
+  "liveServer.settings.donotVerifyTags": true,
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[nginx]": {
+    "editor.defaultFormatter": "ahmadalli.vscode-nginx-conf"
+  },
+  "editor.suggestSelection": "first",
+  "turboConsoleLog.addSemicolonInTheEnd": true,
+  "codesnap.backgroundColor": "transparent",
+  "security.workspace.trust.untrustedFiles": "open",
+  "editor.formatOnSave": true,
+  "indentRainbow.tabmixColor": "rgba(128,32,96,0)",
+  "indentRainbow.errorColor": "rgba(128,32,32,0)",
+  "[html]": {
+    "editor.matchBrackets": "never"
+  },
+  "[css]": {
+    "editor.matchBrackets": "never"
+  },
+  "html.format.wrapLineLength": 70,
+  "editor.unicodeHighlight.invisibleCharacters": false,
+  "scss.lint.unknownAtRules": "ignore",
+  "css.lint.unknownAtRules": "ignore",
+  "gitlens.codeLens.enabled": false,
+  "editor.cursorBlinking": "expand",
+  "editor.inlayHints.enabled": "on",
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "editor.unicodeHighlight.ambiguousCharacters": false,
+  "editor.lineHeight": 30,
+  "glean.showConversionWarning": false,
+  "glean.useExportDefault": true,
+  "explorer.compactFolders": false,
+  "editor.renderLineHighlight": "none",
+  "console-ninja.featureSet": "Community",
+  "git.openRepositoryInParentFolders": "never",
+  "editor.guides.bracketPairs": "active",
+  "editor.guides.bracketPairsHorizontal": false,
+  "css.lint.unknownProperties": "ignore",
+  "workbench.editor.centeredLayoutFixedWidth": true,
+  "scss.lint.unknownProperties": "ignore",
+  "workbench.startupEditor": "none",
+  "terminal.integrated.env.osx": {},
+  "editor.cursorSmoothCaretAnimation": "on",
+  "window.newWindowDimensions": "maximized",
+  "editor.semanticHighlighting.enabled": true,
+  "editor.linkedEditing": true,
+  "workbench.colorCustomizations": {
+    "editor.linkedEditingBackground": "#ffffff00",
+    "selection.background": "#828bb828"
+  },
+  "[markdown]": {
+    "editor.wordWrap": "bounded"
+  },
+  "editor.letterSpacing": 0.5,
+  "terminal.integrated.fontSize": 14,
+  "editor.fontSize": 14,
+  "editor.tokenColorCustomizations": {
+    "[Evondev Dracula Normal Contrast]": {
+      "textMateRules": [
+        {
+          "scope": ["comment", "punctuation.definition.comment"],
+          "settings": {
+            "foreground": "#6272a4",
+            "fontStyle": "italic"
+          }
+        },
+        {
+          "scope": [
+            "entity.other.attribute-name.html",
+            "entity.other.attribute-name.jsx",
+            "entity.other.attribute-name.tsx",
+            "entity.other.attribute-name.generic.html",
+            "entity.other.attribute-name.tag.pug"
+          ],
+          "settings": {
+            "foreground": "#20e3bd"
+          }
+        },
+        {
+          "scope": [
+            "keyword.other.unit.px.css",
+            "keyword.other.unit.vw.css",
+            "keyword.other.unit.vh.css",
+            "keyword.other.unit.em.css",
+            "keyword.other.unit.rem.css",
+            "keyword.other.unit.percentage.css"
+          ],
+          "settings": {
+            "foreground": "#9A86FD"
+          }
+        }
+      ]
+    }
+  },
+  "terminal.integrated.defaultProfile.windows": "Ubuntu (WSL)",
+  "window.zoomLevel": 0.75,
+  "prettier.semi": false,
+  "prettier.trailingComma": "none",
+  "editor.minimap.renderCharacters": false,
+  "editor.minimap.size": "fit",
+  "editor.minimap.enabled": false,
+  "editor.fontWeight": 300,
+  "editor.scrollbar.verticalScrollbarSize": 3,
+  "editor.codeLensFontFamily": "SF Mono",
+  "workbench.editor.empty.hint": "hidden",
+  "workbench.iconTheme": "material-icon-theme",
+  "window.commandCenter": false,
+  "color-highlight.markerType": "underline",
+  "editor.renderWhitespace": "none",
+  "emmet.syntaxProfiles": {
+    "html": {
+      "inline_break": 1
+    }
+  },
+  "editor.stickyScroll.enabled": false,
+  "workbench.colorTheme": "Evondev Dracula Normal Contrast"
+}

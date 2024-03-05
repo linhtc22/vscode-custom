@@ -1,0 +1,116 @@
+/* Dracula theme */
+:root {
+  --gradient-dir1: to top;
+  --gradient-dir2: to right;
+  --gradient-dir3: to left;
+  --gradient-dir4: to left;
+  --gradient-dir5: to top left;
+  --gradient-dir6: to left top;
+  --size: 5px;
+  --border-size: 2.5px;
+  --gradient-primary: #fcb564, #ff65f2, #d66efd;
+  --gradient-secondary: linear-gradient(245deg, #fcb564, #ff65f2);
+}
+body > div[class*='Dracula-minimal-contrast-json']:where(.mtk5),
+body
+  > div[class*='Dracula-normal-contrast-json']
+  :where(.mtk5, .mtk9, .mtk10, .mtk15, .mtk16, .mtk17, .mtk26) {
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+body > div[class*='Dracula-normal-contrast-json'] :where(.mtk10, .mtk15) {
+  background-image: linear-gradient(to left bottom, #fc806c, #ff1bd1);
+}
+body > div[class*='Dracula-normal-contrast-json'] :where(.mtk5, .mtk26) {
+  background-image: linear-gradient(-45deg, #4dd78a, #20e3b2, #a2de6a);
+}
+body > div[class*='Dracula-normal-contrast-json'] :where(.mtk26) {
+  text-shadow: 0 0 2px rgba(32 227 178 / 60%);
+  font-style: italic;
+}
+body
+  > div[class*='Dracula-normal-contrast-json']
+  .part.editor
+  .view-line
+  :where(.mtk26) {
+  font-family: 'IBM Plex mono';
+  font-weight: 400;
+  font-size: 93%;
+}
+body > div[class*='Dracula-normal-contrast-json'] :where(.mtk9, .mtk17) {
+  background-image: linear-gradient(to bottom, #00fdff, #2979ff);
+}
+body > div[class*='Dracula-normal-contrast-json'] :where(.mtk16) {
+  background-image: linear-gradient(45deg, #9d51e5, #febccf);
+}
+body > div[class*='Dracula-normal-contrast-json'] :where(.mtk3) {
+  color: #92b4d5;
+}
+
+body > div[class*='Dracula-normal-contrast-json'] :where(.mtk18, .mtk7) {
+  color: #cbdaff;
+}
+
+body > div[class*='Dracula-normal-contrast-json'] :where(.mtk13) {
+  color: white;
+}
+/* rounded-tab */
+.tabs-container > .tab {
+  border-right: 0 !important;
+}
+.tabs-and-actions-container {
+  padding: 4px !important;
+}
+
+.tabs-container > .tab.active.tab-border-top > .tab-border-top-container {
+  --general-gradient-secondary: #fcb564, #ff65f2, #ff69cf;
+  height: 0.5px !important;
+  background-image: linear-gradient(
+    to right,
+    var(--general-gradient-secondary)
+  );
+  width: 30% !important;
+  left: 50% !important;
+  transform: translate3d(-50%, 0%, 0) !important;
+  top: -1px !important;
+}
+.tabs-container > .tab {
+  border-color: rgba(255, 255, 255, 0.12) rgb(25, 26, 33)
+    rgba(255, 255, 255, 0.12) rgba(255, 255, 255, 0.12);
+  border-style: solid;
+  border-width: 1px 0 0 0;
+}
+.monaco-editor .cursors-layer .cursor {
+  background: linear-gradient(245deg, var(--gradient-primary)) !important;
+}
+.editor-container .monaco-scrollable-element > .scrollbar > .slider {
+  --general-gradient-secondary: #fcb564, #ff65f2, #6a5af9;
+  background: linear-gradient(to top, var(--general-gradient-secondary));
+  width: 4px !important;
+}
+.monaco-workbench
+  .activitybar
+  > .content
+  :not(.monaco-menu)
+  > .monaco-action-bar
+  .action-item.checked
+  .active-item-indicator:before {
+  border: 0;
+  width: 2px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(177deg, #fcb564, #ff65f2, #d66efd);
+}
+.monaco-workbench
+  .activitybar
+  > .content
+  :not(.monaco-menu)
+  > .monaco-action-bar
+  .badge
+  .badge-content {
+  background-image: linear-gradient(to right top, #fcb564, #ff65f2, #d66efd);
+}

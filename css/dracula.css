@@ -1,0 +1,195 @@
+:root {
+  --gradient-dir1: to top right;
+  --gradient-dir2: to bottom left;
+  --gradient-dir3: to right top;
+  --gradient-dir4: to left bottom;
+  --gradient-dir5: to top left;
+  --size: 5px;
+
+  --general-gradient-primary: #fcb564, #ff65f2;
+  --general-gradient-secondary: #fcb564, #ff65f2, #ff69cf;
+}
+.mtk10,
+.mtk15 {
+  color: transparent;
+  background-image: linear-gradient(var(--gradient-dir4), #fc806c, #ff1bd1);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.mtk5,
+.mtk26 {
+  color: transparent;
+  background-image: linear-gradient(
+    var(--gradient-dir1),
+    #4dd78a,
+    #20e3b2,
+    #a2de6a
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-font-smoothing: auto;
+  font-family: 'Dank mono', monospace;
+  font-size: 14px;
+}
+.mtk26 {
+  background-image: linear-gradient(
+    var(--gradient-dir5),
+    #4dd78a,
+    #20e3b2,
+    #a2de6a
+  );
+  font-style: italic;
+}
+.mtk23,
+.mtk16 {
+  color: transparent;
+  background-image: linear-gradient(var(--gradient-dir1), #d66efd, #6a5af9);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.mtk9,
+.mtk17 {
+  color: transparent;
+  background-image: linear-gradient(
+    var(--gradient-dir2),
+    #098dff,
+    #2cccff,
+    #2979ff
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.mtk18 {
+  color: transparent;
+  background-image: linear-gradient(var(--gradient-dir2), #b0beff, #fed9ff);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-style: normal;
+}
+.mtk3 {
+  color: transparent;
+  /* background-image: linear-gradient(
+    var(--gradient-dir1),
+    #c29ffd,
+    #ffb4dc,
+    #e39bf7
+  ); */
+  background-image: linear-gradient(to top, #fce1d0, #ffadd6, #e39bf7);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.mtk7 {
+  color: transparent;
+  background-image: linear-gradient(var(--gradient-dir2), #fc6c8f, #ffb86c);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.mtk8,
+.mtk14 {
+  color: transparent;
+  background-image: linear-gradient(to right, #ffb88c, #eac394);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.monaco-workbench
+  .activitybar
+  > .content
+  :not(.monaco-menu)
+  > .monaco-action-bar
+  .action-item.checked
+  .active-item-indicator:before {
+  border: 0;
+  width: 1.5px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(
+    to bottom,
+    var(--general-gradient-secondary)
+  );
+}
+.monaco-workbench
+  .activitybar
+  > .content
+  :not(.monaco-menu)
+  > .monaco-action-bar
+  .badge
+  .badge-content {
+  background-image: linear-gradient(45deg, var(--general-gradient-secondary));
+}
+.monaco-editor .cursors-layer .cursor {
+  background-image: linear-gradient(245deg, var(--general-gradient-secondary));
+}
+.mtki {
+  font-style: italic;
+}
+.editor-container .monaco-scrollable-element > .scrollbar > .slider {
+  --general-gradient-secondary: #fcb564, #ff65f2, #6a5af9;
+  background: linear-gradient(to top, var(--general-gradient-secondary));
+  width: 3px !important;
+}
+.tab-border-bottom-container,
+.tab-border-top-container {
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: xor;
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  padding: 1.1px;
+  width: 100% !important;
+  height: calc(100% - 1px) !important;
+  background-color: transparent !important;
+  border-radius: inherit;
+  box-sizing: border-box;
+}
+.tab-border-bottom-container:before,
+.tab-border-top-container:before {
+  content: '';
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  animation: spinner 3s cubic-bezier(0, 0.8, 0.95, 1) infinite;
+  background: conic-gradient(
+      from 0deg at 50% 51.35%,
+      rgba(185, 215, 243, 0) 0deg,
+      rgba(185, 215, 243, 0) 289.4deg,
+      #407cff 318deg,
+      #da8bff 1turn,
+      #fb7185 2turn
+    ),
+    conic-gradient(
+      from 180deg at 50% 51.35%,
+      rgba(185, 215, 243, 0) 0deg,
+      rgba(185, 215, 243, 0) 287.46deg,
+      #407cff 318deg,
+      #da8bff 1turn,
+      #fb7185 2turn
+    );
+  border-radius: inherit;
+}
+@keyframes spinner {
+  100% {
+    transform: translate(-50%, -50%) rotate(1turn);
+  }
+}
+.tab {
+  overflow: hidden;
+}
+.tab.active {
+  border-radius: 100px !important;
+  box-shadow: inset 0 1px 1px 0 rgba(199, 211, 234, 0.12),
+    inset 0 24px 48px 0 rgba(199, 211, 234, 0.05),
+    0 24px 32px 0 rgba(6, 6, 14, 0.7);
+}
